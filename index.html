@@ -134,49 +134,66 @@
         @keyframes pillFadeIn { to { opacity: 1; transform: translateY(0); } }
 
         @media (max-width: 768px) {
-            h1 { font-size: 32px; letter-spacing: -1.5px; margin-bottom: 20px; }
-            h2 { font-size: 26px; letter-spacing: -1px; margin-bottom: 20px; }
-            .slide { padding: 60px 20px 20px !important; overflow-y: auto; }
-            .slide-portada, .slide-cierre { justify-content: center; }
-            .subtitle { font-size: 16px; max-width: 100%; }
-            .section-tag { font-size: 10px; letter-spacing: 3px; padding: 6px 14px; margin-bottom: 16px; }
-            .pain-grid { grid-template-columns: 1fr; gap: 12px; margin-top: 20px; }
-            .pain-card { flex-direction: row; text-align: left; padding: 18px 16px; }
-            .pain-icon { width: 36px; height: 36px; font-size: 16px; border-radius: 10px; }
-            .pain-text { font-size: 14px; }
-            .motor-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 20px; }
-            .motor-card { padding: 20px 16px; gap: 8px; }
-            .motor-letter { font-size: 32px; }
-            .motor-name { font-size: 14px; }
-            .motor-desc { font-size: 12px; }
-            .compound-formula { gap: 8px; }
-            .compound-factor { min-width: 0; flex: 1; padding: 16px 10px; }
+            h1 { font-size: 30px; letter-spacing: -1.5px; margin-bottom: 16px; }
+            h2 { font-size: 24px; letter-spacing: -1px; margin-bottom: 16px; }
+            .slide { padding: 50px 18px 80px !important; overflow-y: auto; }
+            .slide-portada, .slide-cierre { justify-content: center; padding-top: 20px !important; padding-bottom: 20px !important; }
+            .subtitle { font-size: 15px; max-width: 100%; }
+            .section-tag { font-size: 10px; letter-spacing: 3px; padding: 6px 14px; margin-bottom: 12px; }
+            .pain-grid { grid-template-columns: 1fr; gap: 10px; margin-top: 16px; }
+            .pain-card { flex-direction: row; text-align: left; padding: 16px 14px; gap: 12px; }
+            .pain-icon { width: 34px; height: 34px; font-size: 15px; border-radius: 10px; }
+            .pain-text { font-size: 13px; }
+            .motor-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 16px; }
+            .motor-card { padding: 16px 12px; gap: 6px; }
+            .motor-letter { font-size: 28px; }
+            .motor-name { font-size: 13px; }
+            .motor-concept { font-size: 10px; }
+            .motor-desc { font-size: 11px; }
+            .compound-example { margin-top: 20px; }
+            .compound-formula { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+            .compound-factor { min-width: 0; padding: 14px 10px; }
             .compound-factor-after { font-size: 20px; }
             .compound-factor-label { font-size: 9px; letter-spacing: 1px; }
-            .compound-op { font-size: 20px; }
-            .compound-result { flex-direction: column; gap: 16px; padding: 24px 20px; }
-            .compound-result-value { font-size: 28px; }
-            .compound-result-arrow { transform: rotate(90deg); font-size: 24px; }
-            .phase-row { flex-direction: column; gap: 16px; margin-top: 20px; }
-            .phase-price { font-size: 32px; }
+            .compound-factor-before { font-size: 12px; }
+            .compound-factor-change { font-size: 10px; padding: 2px 8px; }
+            .compound-op { display: none; }
+            .compound-result { flex-direction: column; gap: 12px; padding: 20px 16px; margin-top: 20px; }
+            .compound-result-value { font-size: 26px; }
+            .compound-result-arrow { transform: rotate(90deg); font-size: 22px; }
+            .compound-result-growth { font-size: 14px; margin-top: 12px; }
+            .phase-row { flex-direction: column; gap: 16px; margin-top: 16px; }
+            .phase-price { font-size: 30px; }
+            .phase-card { padding: 24px 20px; }
             .phase-card.recommended { transform: none; }
-            .roadmap { grid-template-columns: 1fr; gap: 16px; margin-top: 20px; }
-            .roadmap-card { padding: 24px 20px; }
-            .roadmap-title { font-size: 18px; }
-            .roadmap-list li { font-size: 13px; }
-            .includes-grid { grid-template-columns: 1fr; gap: 10px; margin-top: 20px; }
-            .include-item { padding: 16px 18px; }
-            .include-text { font-size: 14px; }
-            .faq-list { gap: 12px; margin-top: 20px; }
-            .faq-item { padding: 20px 22px; }
-            .faq-q { font-size: 15px; }
-            .faq-a { font-size: 13px; }
-            .hero-pills { flex-direction: column; align-items: center; gap: 10px; margin-top: 24px; }
+            .phase-desc { font-size: 13px; }
+            .pricing-note p { font-size: 13px; }
+            .roadmap { grid-template-columns: 1fr; gap: 14px; margin-top: 16px; }
+            .roadmap-card { padding: 20px 18px; }
+            .roadmap-title { font-size: 17px; margin-bottom: 12px; }
+            .roadmap-list li { font-size: 12px; }
+            .includes-grid { grid-template-columns: 1fr; gap: 8px; margin-top: 16px; }
+            .include-item { padding: 14px 16px; gap: 10px; }
+            .include-check { width: 22px; height: 22px; font-size: 11px; border-radius: 6px; }
+            .include-text { font-size: 13px; }
+            .faq-list { gap: 10px; margin-top: 16px; }
+            .faq-item { padding: 18px 20px; }
+            .faq-q { font-size: 14px; margin-bottom: 8px; }
+            .faq-a { font-size: 12px; }
+            .hero-pills { flex-direction: column; align-items: center; gap: 10px; margin-top: 20px; }
             .hero-pill { font-size: 13px; padding: 10px 18px; }
-            .navigation { bottom: 16px; right: 16px; gap: 8px; }
-            .nav-btn { width: 38px; height: 38px; font-size: 16px; border-radius: 10px; }
-            .slide-counter { bottom: 22px; left: 16px; font-size: 11px; }
+            .navigation { bottom: 14px; right: 14px; gap: 6px; }
+            .nav-btn { width: 36px; height: 36px; font-size: 15px; border-radius: 10px; }
+            .slide-counter { bottom: 20px; left: 14px; font-size: 11px; }
             .fullscreen-hint { display: none; }
+            .logo-kryolan { width: 110px !important; padding: 10px 14px !important; }
+            .cierre-logos { gap: 16px !important; margin-bottom: 30px !important; }
+            .cierre-logos img:first-child { width: 80px !important; padding: 8px 12px !important; }
+            .cierre-logos img:last-child { width: 60px !important; }
+            .cierre-logos span { font-size: 20px !important; }
+            .portada-sub { font-size: 11px !important; margin-bottom: 16px !important; letter-spacing: 1.5px !important; }
+            .portada-by { font-size: 11px !important; margin-top: 16px !important; }
+            .portada-by img { height: 14px !important; }
         }
     </style>
 </head>
@@ -188,8 +205,8 @@
 
         <!-- SLIDE 1: PORTADA -->
         <div class="slide slide-dark slide-portada active" id="slide1">
-            <img src="logo-kryolan.png" alt="Kryolan Colombia" style="width: 140px; margin-bottom: 20px; background: #fff; padding: 12px 18px; border-radius: 12px;">
-            <p style="font-size: 14px; color: #64748B; font-weight: 500; margin-bottom: 30px; letter-spacing: 2px; text-transform: uppercase;">Preparado para Kryolan Colombia</p>
+            <img src="logo-kryolan.png" alt="Kryolan Colombia" class="logo-kryolan" style="width: 140px; margin-bottom: 20px; background: #fff; padding: 12px 18px; border-radius: 12px;">
+            <p class="portada-sub" style="font-size: 14px; color: #64748B; font-weight: 500; margin-bottom: 30px; letter-spacing: 2px; text-transform: uppercase;">Preparado para Kryolan Colombia</p>
             <h1>Escala tus ventas online con <span class="highlight">estrategia, pauta e IA</span></h1>
             <p class="subtitle" style="font-size: 22px;">M&eacute;todo REAL + Gesti&oacute;n de Pauta + Contenido IA</p>
             <div class="hero-pills">
@@ -206,7 +223,7 @@
                     Contenido IA
                 </div>
             </div>
-            <p style="font-size: 13px; color: #64748B; margin-top: 30px; font-weight: 500;">Por <img src="logo-la-real.png" alt="LA REAL" style="height: 18px; vertical-align: middle; opacity: 0.7; margin: 0 4px;"> LA REAL &mdash; Agencia de Ecommerce</p>
+            <p class="portada-by" style="font-size: 13px; color: #64748B; margin-top: 30px; font-weight: 500;">Por <img src="logo-la-real.png" alt="LA REAL" style="height: 18px; vertical-align: middle; opacity: 0.7; margin: 0 4px;"> LA REAL &mdash; Agencia de Ecommerce</p>
         </div>
 
         <!-- SLIDE 2: EL PROBLEMA -->
@@ -462,7 +479,7 @@
 
         <!-- SLIDE 9: CIERRE -->
         <div class="slide slide-dark slide-cierre" id="slide9">
-            <div style="display: flex; align-items: center; gap: 24px; margin-bottom: 50px;">
+            <div class="cierre-logos" style="display: flex; align-items: center; gap: 24px; margin-bottom: 50px;">
                 <img src="logo-kryolan.png" alt="Kryolan" style="width: 100px; background: #fff; padding: 10px 14px; border-radius: 10px;">
                 <span style="font-size: 28px; color: #334155; font-weight: 300;">&times;</span>
                 <img src="logo-la-real.png" alt="LA REAL" style="width: 80px; opacity: 0.9;">
@@ -515,8 +532,16 @@
         });
 
         document.querySelector('.presentation').addEventListener('click', (e) => {
-            if (!e.target.closest('.navigation') && !e.target.closest('a')) nextSlide();
+            if (!e.target.closest('.navigation') && !e.target.closest('a') && window.innerWidth > 768) nextSlide();
         });
+
+        let touchStartX = 0, touchStartY = 0;
+        document.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; touchStartY = e.changedTouches[0].screenY; }, { passive: true });
+        document.addEventListener('touchend', (e) => {
+            const dx = e.changedTouches[0].screenX - touchStartX;
+            const dy = e.changedTouches[0].screenY - touchStartY;
+            if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 50) { dx < 0 ? nextSlide() : prevSlide(); }
+        }, { passive: true });
 
         function toggleFullscreen() {
             if (!document.fullscreenElement) document.documentElement.requestFullscreen();
